@@ -19,6 +19,6 @@ logs
 .idea
 
 # Local env files
-.env
+# .env is tracked and encrypted with git-crypt.
 .env.*
 !.env.example

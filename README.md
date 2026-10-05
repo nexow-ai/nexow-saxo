@@ -35,6 +35,8 @@ Make sure to install the dependencies:
 pnpm install
 ```
 
+`.env` is committed encrypted with git-crypt. On a new machine, install git-crypt and run `git-crypt unlock ~/.config/git-crypt/nexow.ai/nexow-saxo.key` once. The working tree stays plaintext; the blob in git is ciphertext. Plaintext `.env.*` overrides stay gitignored, and the key file is never committed.
+
 ## Development Server
 
 Start the development server on `http://localhost:3000`:
